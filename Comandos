@@ -1,0 +1,7 @@
+terraform init \\inicializar
+terraform plan \\vai mostrar tudo o que sera efetuado ou atualizado
+terraform apply \\aplica as mudanças
+terraform show \\mostra todo o codigo
+
+aws ec2 describe-security-groups \\mostra os grupos
+ssh -i "terraform-aws.pem" ubuntu@.. \\conectar na VM via SSH
