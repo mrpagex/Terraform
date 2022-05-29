@@ -1,0 +1,13 @@
+provider "aws" {
+  version   = "~> 2.0"  
+  region    = "us-east-1"
+}
+
+resource "aws_instance" "dev" {
+  ami           = "ami-005de95e8ff495156"
+  instance_type = "t2.micro"
+  key_name      = "terraform-aws"
+  tags          = {
+      Name = "1"
+  }
+}
